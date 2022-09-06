@@ -30,10 +30,11 @@ let init = () => {
         updateNav(current);
       } else {
         current = 1;
+        updateNav(current);
       }
       container.appendChild(slides[0].cloneNode([true]));
       container.removeChild(slides[0]);
-    }, 6000);
+    }, time);
   };
   startSliding();
 };
